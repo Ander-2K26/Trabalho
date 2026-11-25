@@ -8,7 +8,7 @@ opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidad
 while True:
     match opc:
         case 1:
-            nome_jogo = input("Digite o nome do jogo: ").upper()
+            nome_jogo = input("Digite o nome do jogo que deseja adicionar: ").upper()
             if nome_jogo not in jogos:
                 jogos.append(nome_jogo)
                 print("=" * 30)
@@ -29,11 +29,11 @@ while True:
                 print("=" * 80)    
         case 3:
             print("=" * 30)
-            print(f"SEU CATÁLOGO POSSUI {len(jogos)} jogo(s).")
+            print(f"Seu catálogo possui {len(jogos)} jogo(s).")
             print("=" * 30)
         case 4:
             print("=" * 30)
-            nome_jogo = input("Digite o nome do jogo: ").upper()
+            nome_jogo = input("Digite o nome do jogo que deseja visualizar: ").upper()
             print("=" * 30)
             if nome_jogo in jogos:
                 print("=" * 30)
@@ -54,13 +54,13 @@ while True:
                 print("=" * 30)
             else:            
                 print("=" * 30)
-                print(f"{nome_jogo} não foi encontrado.")
+                print(f"{nome_jogo} não foi encontrado(a).")
                 print("=" * 30)       
         case 0:
             break
         case _:
             print("=" * 30)
-            print("Opção inválida, tente novamente.")
+            print("Opção inválida, tente novamente a seguir...")
             print("=" * 30)
     opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
-print("Programa encerrado")                                
+print("Programa encerrado.")                                
