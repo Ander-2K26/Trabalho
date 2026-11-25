@@ -1,8 +1,7 @@
 jogos = []
 #jogos = ["GTA", "GTA 2", "GTA 3", "GTA 4", "GTA 5", "GTA 6"]
 
-print("=== CÁTALAGO DE JOGOS ===")
-
+print("\n=== CÁTALAGO DE JOGOS ===\n")
 opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
 
 while True:
@@ -33,7 +32,7 @@ while True:
             print("=" * 30)
         case 4:
             print("=" * 30)
-            nome_jogo = input("Digite o nome do jogo que deseja visualizar: ").upper()
+            nome_jogo = input("Digite o nome do jogo que deseja verificar no catálogo: ").upper()
             print("=" * 30)
             if nome_jogo in jogos:
                 print("=" * 30)
@@ -62,5 +61,8 @@ while True:
             print("=" * 30)
             print("Opção inválida, tente novamente a seguir...")
             print("=" * 30)
+            
+    print("\n=== CÁTALAGO DE JOGOS ===\n")
     opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
+    
 print("Programa encerrado.")                                
