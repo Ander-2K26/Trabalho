@@ -1,12 +1,18 @@
 jogos = []
 #jogos = ["GTA", "GTA 2", "GTA 3", "GTA 4", "GTA 5", "GTA 6"]
 
-print("\n=== CÁTALAGO DE JOGOS ===\n")
-opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
-
 while True:
+    
+    print("\n=== CÁTALAGO DE JOGOS ===\n")
+
+    entrada_usuario = input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: ")
+    entrada_valida = entrada_usuario.isdigit()
+    if entrada_valida:
+        opc = entrada_usuario
+    else:
+        opc = -1
     match opc:
-        case 1:
+        case '1':
             nome_jogo = input("Digite o nome do jogo que deseja adicionar: ").upper()
             if nome_jogo not in jogos:
                 jogos.append(nome_jogo)
@@ -17,7 +23,7 @@ while True:
                 print("=" * 30)
                 print(f"{nome_jogo} foi adicionado anteriormente")    
                 print("=" * 30)        
-        case 2:
+        case '2':
             if len(jogos) == 0:
                 print("=" * 30)                
                 print("Não há jogos cadastrados.")
@@ -26,11 +32,11 @@ while True:
                 print("=" * 80)
                 print(f"JOGOS CADASTRADOS: {jogos}")
                 print("=" * 80)    
-        case 3:
+        case '3':
             print("=" * 30)
             print(f"Seu catálogo possui {len(jogos)} jogo(s).")
             print("=" * 30)
-        case 4:
+        case '4':
             print("=" * 30)
             nome_jogo = input("Digite o nome do jogo que deseja verificar no catálogo: ").upper()
             print("=" * 30)
@@ -42,7 +48,7 @@ while True:
                 print("=" * 30)
                 print(f"{nome_jogo} não está na lista.")
                 print("=" * 30)           
-        case 5:
+        case '5':
             print("=" * 30)
             nome_jogo = input("Digite o nome do jogo que deseja remover: ").upper()
             print("=" * 30)
@@ -55,15 +61,12 @@ while True:
                 print("=" * 30)
                 print(f"{nome_jogo} não foi encontrado(a).")
                 print("=" * 30)       
-        case 0:
+        case '0':
             break
         case _:
             print("=" * 30)
             print("Opção inválida, tente novamente a seguir...")
             print("=" * 30)
-            
-    print("\n=== CÁTALAGO DE JOGOS ===\n")
-    opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
     
 print("Programa encerrado.")
 
