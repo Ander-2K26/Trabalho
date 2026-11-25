@@ -1,5 +1,5 @@
-#jogos = []
-jogos = ["GTA", "GTA 2", "GTA 3", "GTA 4", "GTA 5", "GTA 6"]
+jogos = []
+#jogos = ["GTA", "GTA 2", "GTA 3", "GTA 4", "GTA 5", "GTA 6"]
 
 print("=== CÁTALAGO DE JOGOS ===")
 
