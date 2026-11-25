@@ -67,8 +67,5 @@ while True:
             print("=" * 30)
             print("Opção inválida, tente novamente a seguir...")
             print("=" * 30)
-            
-    #print("\n=== CÁTALAGO DE JOGOS ===\n")
-    #opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
     
 print("Programa encerrado.")                                
