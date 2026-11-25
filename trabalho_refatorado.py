@@ -65,4 +65,6 @@ while True:
     print("\n=== CÁTALAGO DE JOGOS ===\n")
     opc = int(input(" 1- Adicionar jogo\n 2- Visualizar catálogo\n 3- Ver quantidade de jogos\n 4- Verificar se um jogo está no catálogo\n 5- Remover jogo\n 0- Sair\n >: "))
     
-print("Programa encerrado.")                                
+print("Programa encerrado.")
+
+###TESTE COMMIT MARCELLO PEDROZO                                
