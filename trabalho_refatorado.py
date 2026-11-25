@@ -1,6 +1,8 @@
+#VETOR DINAMICO QUE ARMAZENA JOGOS#
 jogos = []
 #jogos = ["GTA", "GTA 2", "GTA 3", "GTA 4", "GTA 5", "GTA 6"]
 
+#LACO MANTEM PROGRAMA EM EXECUCAO ENQUANTO O USUARIO NAO ESCOLHER SAIR
 while True:
     
     print("\n=== CÁTALAGO DE JOGOS ===\n")
@@ -11,6 +13,8 @@ while True:
         opc = entrada_usuario
     else:
         opc = -1
+
+#EXECUTA O MENU CONFORME A OPCAO ESCOLHIDA ANTERIORMENTE PELO USUARIO        
     match opc:
         case '1':
             nome_jogo = input("Digite o nome do jogo que deseja adicionar: ").upper()
@@ -70,4 +74,4 @@ while True:
     
 print("Programa encerrado.")
 
-###TESTE COMMIT MARCELLO PEDROZO   aaaaaaaaaaaaaaaaa                             
+                            
